@@ -1,10 +1,11 @@
 package main
+
 import (
-    "fmt"       // A package in the Go standard library.
-    // "io/ioutil" // Implements some I/O utility functions.
-    // m "math"    // Math library with local alias m.
-    // "os"        // OS functions like working with the file system
-    // "strconv"   // String conversions.
+    "fmt"
+    // "io/ioutil"
+    // m "math"
+    // "os"
+    // "strconv"
     // "reflect"
     "math/big"
     elliptic "crypto/elliptic"
@@ -48,6 +49,7 @@ func initBLS12_381_G2() {
   g2.P, _ = new(big.Int).SetString("0x1a0111ea397fe69a4b1ba7b6434bacd764774b84f38512bf6730d2a0f6b0f6241eabfffeb153ffffb9feffffffffaaab", 0)
   g2.N, _ = new(big.Int).SetString("0x73eda753299d7d483339d80809a1d80553bda402fffe5bfeffffffff00000001", 0)
   g2.B, _ = new(big.Int).SetString("0x0000000000000000000000000000000000000000000000000000000000000004", 0)
+  g1.A, _ = new(big.Int).SetString("0", 0)
   // g2.Gx, _ = new(big.Int).SetString("0x13E02B6052719F607DACD3A088274F65596BD0D09920B61AB5DA61BBDC7F5049334CF11213945D57E5AC7D055D042B7E", 0)
   // g2.Gy, _ = new(big.Int).SetString("0x606C4A02EA734CC32ACD2B02BC28B99CB3E287E85A763AF267492AB572E99AB3F370D275CEC1DA1AAA9075FF05F79BE", 0)
   g2.Gx, _ = new(big.Int).SetString("3059144344244213709971259814753781636986470325476647558659373206291635324768958432433509563104347017837885763365758", 10)
